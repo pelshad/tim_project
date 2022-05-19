@@ -13,7 +13,6 @@
     <div class="header">
       <h1 class="header_txt"><a href="main_page.php">베란다가든</a></h1>
     </div>
-  
       <form action="join_proc.php" method="post" id="join_form">
         <div class="user_ins">
           <input type="text" name="nm" placeholder="이름(닉네임)">
