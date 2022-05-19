@@ -1,0 +1,109 @@
+fieldset.detail {
+    display: block;
+    width:900px;
+    border-radius:10px;
+    margin: 30px;
+}
+
+
+div.ctnt{
+    width:800px;
+    min-height:400px;
+    height: 100%;
+    resize: none;
+    border-radius:10px;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+div.title{
+    font-size:1.7rem;
+    font-weight:bold;
+    margin:10px;
+}
+
+div.nm{
+    font-size:1.2rem;
+    font-weight:bold;
+    margin:0 10px;
+}
+
+div.created_at{
+    color: #7b8184;
+    margin:0 10px;
+}
+
+div.button_end{
+    text-align: end;
+    margin-right: 25px;
+}
+
+img.board_img{
+    border-radius: 10px;
+    display: block;
+    object-fit: cover;
+    width: 400px;
+    height: 400px;
+}
+
+span.view{
+    color: black;
+}
+
+/* 댓 글 */
+div.comment{
+    word-break: break-all;
+}
+ul li{
+    list-style: none;
+}
+li{
+    float:left;
+}
+ul{
+    padding: 5px 10px;
+}
+/*댓글*/
+fieldset.comment {
+    display: block;
+    width:800px;
+    border-radius:10px;
+    margin:10px 30px;
+    padding: 10px 20px;
+    border: 1px solid rgb(191, 191, 191);
+}
+div.com_nm{
+    margin: 5px 0;
+    font-weight: bold;
+}
+
+input.comct{
+    border:none;
+    width: 800px;
+    height: 20px;
+}
+
+div.com_id{
+    display: inline-block;
+    width: 50px;
+    margin: 0 30px;
+    font-weight: bold;
+}
+
+div.com_ct{
+    display:inline-block;
+    margin: 0 0;
+    width: 610px;
+    font-size: 0.9em;
+}
+
+div.com_cr{
+    display: inline-block;
+    font-size: 0.6em;
+}
+
+a.del_com{
+    font-size: 0.7em;
+}
+
