@@ -4,7 +4,7 @@ namespace application\controllers;
 
 use application\models\BoardModel;
 
-// 외부 파일을 사용하겠다는 뜻
+// 외부 파일을 사용하겠다는 뜻a
 
 class BoardController extends Controller {
     public function write() {
