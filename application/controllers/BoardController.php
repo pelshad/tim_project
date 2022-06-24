@@ -4,10 +4,12 @@ namespace application\controllers;
 
 use application\models\BoardModel;
 
-// 외부 파일을 사용하겠다는 뜻a
+// 외부 파일을 사용하겠다는 뜻
 
-class BoardController extends Controller {
-    public function write() {
+class BoardController extends Controller
+{
+    public function write()
+    {
         $this->addAttribute(_TITLE, "글쓰기");
         $this->addAttribute(_HEADER, $this->getView("template/header.php"));
         $this->addAttribute(_MAIN, $this->getView("board/write.php"));
@@ -15,7 +17,8 @@ class BoardController extends Controller {
         return "template/t1.php";
     }
 
-    public function writeProc() {
+    public function writeProc()
+    {
         $title = $_POST["title"];
         $ctnt = $_POST["ctnt"];
         $param = [
@@ -28,7 +31,8 @@ class BoardController extends Controller {
         return "redirect:/board/list";
     }
 
-    public function list() {
+    public function list()
+    {
         $model = new BoardModel();
         // $this->list = $model->selBoardList();
         $this->addAttribute(_TITLE, "리스트");
@@ -41,7 +45,8 @@ class BoardController extends Controller {
         // return "board/list.php"; // view 파일명
     }
 
-    public function detail() {
+    public function detail()
+    {
         $i_board = $_GET["i_board"];
         // print "i_board : ${i_board}";
         $model = new BoardModel();
@@ -52,7 +57,8 @@ class BoardController extends Controller {
         // 글번호, 제목, 내용, 글쓴이 이름, 작성일
     }
 
-    public function del() {
+    public function del()
+    {
         $i_board = $_GET["i_board"];
         $model = new BoardModel();
         $param = ["i_board" => $i_board];
@@ -60,7 +66,8 @@ class BoardController extends Controller {
         return "redirect:/board/list";
     }
 
-    public function mod() {
+    public function mod()
+    {
         $i_board = $_GET["i_board"];
         $model = new BoardModel();
         $param = ["i_board" => $i_board];
@@ -76,7 +83,8 @@ class BoardController extends Controller {
         // 장점: 레이아웃 수정 시 template만 건드리면 된다.
     }
 
-    public function modProc() {
+    public function modProc()
+    {
         $i_board = $_POST["i_board"];
         $title = $_POST["title"];
         $ctnt = $_POST["ctnt"];
